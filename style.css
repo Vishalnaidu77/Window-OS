@@ -9,10 +9,44 @@ body{
     height: 100%;
     width: 100%;
     background-color: #111;
+    overflow: hidden;
 }
 
 main{
     height: 100%;
     width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1504006833117-8886a355efbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.task-bar{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(183, 183, 183, 0.668);
+    position: absolute;
+    bottom: 0;
+    border-top: px solid #2f2f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background-apps{
+    display: flex;
+    gap: 30px;
+}
+
+.background-apps img{
+    height: 30px;
+}
+
+.option{
+    height: 50%;
+    width: 18%;
+    background-color: #2f2f2fee;
+    border-radius: 15px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.000001s ease;
 }
