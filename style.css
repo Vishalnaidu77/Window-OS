@@ -10,6 +10,7 @@ body{
     width: 100%;
     background-color: #111;
     overflow: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main{
@@ -26,10 +27,11 @@ main{
     background-color: rgba(183, 183, 183, 0.668);
     position: absolute;
     bottom: 0;
-    border-top: px solid #2f2f2f;
+    border-top: 1px solid #2f2f2f;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(4px);
 }
 
 .background-apps{
@@ -42,11 +44,29 @@ main{
 }
 
 .option{
-    height: 50%;
-    width: 18%;
-    background-color: #2f2f2fee;
+    height: 31%;
+    width: 14%;
+    background-color: rgba(255, 255, 255, 0.668);
     border-radius: 15px;
     position: absolute;
     opacity: 0;
     transition: all 0.000001s ease;
+    backdrop-filter: blur(4px);
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.options{
+    display: flex;
+    color: #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 20px;
+    border-radius: 5px;
+}
+
+.options:hover{
+    background-color: rgba(255, 255, 255, 0.89);
 }
